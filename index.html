@@ -5,33 +5,34 @@
     
    </head>
   <title>CaptureTone</title>
-  <style>
-    body {
-        font-family: Arial, Sans-Serif, Aspire;
-        margin: 0px;
-        padding: 0px;
-        background-color:white;
-      } 
-    .nav {
-        display: flex;
-        align-items: center;
-        background-color: #F5F5F5;
-        padding: 20px 20px;
-        justify-content: space-between; 
-      }  
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color:#191919 ;
-        font-family: 'Alegreya Sans SC', sans-serif;
-      } 
-    .use_app{
+ <style>
+   body{
+     font-family:Arial, Sans-Serif, Aspire ;
+     margin: 0;
+     padding: 0;
+     background-color: white;
+   }
+   .nav{
+     display: flex;
+     background-color: #F5F5F5;
+     padding:50px 50px;
+     justify-content: space-between;
+   }
+   .logo{
+     font-size: 60px;
+     font-weight: bold;
+     color:#191919;
+     font-family: Alegreya Sans SC;
+   }
+   .use_app{
+     font-family: Alegreya Sans SC;
         text-decoration: none;
         background-color: #0057FF;
         color: white;
+        margin-bottom:0px;
         margin-right: 10px;
-        padding: 10px 26px;
-        font-size: 15px;
+        padding: 30px 80px;
+        font-size: 30px;
         text-decoration: none;
         border-radius:50px;
       }
@@ -40,64 +41,54 @@
         align-items: center;
         border:0px solid #ccc;
         margin: 0px; 
-        padding: 30px 20px;/* Move search box to the right */
-        
+        padding: 80px 50px;
       }
-
       .search-input {
-        
-        padding: 7px 15px;
+        font-size: 30px;
+        padding: 60px 50px;
         border: 1px solid #ccc;
-        border-radius: 50px;
-        margin-right: 10px; /* Add margin between search input and icon */
-      }   
-    .container {
+        border-radius: 90px;
+        margin-right: 10px; 
+      } 
+      .container {
         position: relative;
         text-align: center;
         color: white;
+        
       }
-
-    .centered {
+      .centered {
         position: absolute;
+        font-size: 30px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
- 
-    td {
-         border:0px solid black;
-         
+      .td_image:hover{
+        border: 0px solid #0057FF;
       }
-  .td_image:hover{
-    border: 0px solid #0057FF;
-  }
-    table {
-        border-spacing:20px;
-       
+      table {
+        border-spacing:30px;
     }
-    .card_local{
-     
-    }
-   .card{
+    .card{
      border: 0px solid black;
-     max-width: 350px;
+     max-width: 800px;
      margin: auto;
      text-align: left;
      font-family: ;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     margin-bottom: 30px;
+     margin-bottom: 100px;
    }
    .card_img{
      width:100% ;
    }
    .card_name{
-     padding-left: 5px;
+     padding-left: 20px;
      color: black;
-     font-size: 18px;
+     font-size: 16px;
    }
    .card_name2{
-     padding-left: 5px;
-     padding-bottom: 5px;
+     padding-left: 20px;
+     padding-bottom: 30px;
      color: black;
      font-size: 10px;
    }
@@ -107,19 +98,19 @@
    .footer_heading{
      text-align: center;
      font-size: 20px;
-     padding-top: 30px;
+     padding-top: 50px;
    }
    .footer_text{
      text-align: center;
      font-size: 10px;
-     margin-left: 20px;
-     margin-right: 20px;
+     margin-left: 50px;
+     margin-right: 50px;
      padding-top:20px;
    }
-  .icon{
+   .icon{
     text-align: center;
     padding-top: 10px;
-  }
+   }
    .fa {
   padding: 10px;
   font-size: 20px;
@@ -155,159 +146,155 @@
   background: #E5E4E2;
   padding-top: 10px;
   padding-bottom:10px;
-  font-size:10px ;
+  font-size:5px ;
 }
-  </style>
+ </style>
   <body>
-    <div class="nav">
-      <div class="logo">
-        CaptureTone
-      </div>
-      <div>
-        <a href="" class="use_app">Use App</a>
-      </div>
-    </div> 
-    
-    <div class="search-box">
+<div class="nav">
+  <div class="logo">
+    CaptureTone
+  </div>
+  <div> <a href="#downlode" class="use_app">Use App</a></div>
+</div>
+<div class="search-box">
     <input type="text" class="search-input" placeholder="Search..." style="width:100%; height:50px">
       <!--<a href="#Search">
         <i class="fas fa-search" style="color:#13D0CA;"></i>-->
       </a>
      </div>
-     
-    <div  style="overflow-x:auto; margin-top:-80px; border:0px solid #ccc; width:100%">
+     <div  style="overflow-x:auto; margin-top:-80px; padding:5px 0px; border:0px solid #ccc; width:100%">
       <table>
         <td class="td">
           <div class="container">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTVt3RVr-C7K1Enzwi82BjO2v-saqw7f6xg&usqp=CAU" alt="Snow" class="td_image" style="width:100px; border-radius:30px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTVt3RVr-C7K1Enzwi82BjO2v-saqw7f6xg&usqp=CAU" alt="Snow" class="td_image" style="width:250px; border-radius:90px;">
             <div class="centered">Cinematic</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://i.postimg.cc/sXcHN6pV/pexels-photo-1629236.jpg" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://i.postimg.cc/sXcHN6pV/pexels-photo-1629236.jpg" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Abstract</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/584302/pexels-photo-584302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/584302/pexels-photo-584302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Aerial</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/635499/pexels-photo-635499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/635499/pexels-photo-635499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Animals</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Architecture</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/5400806/pexels-photo-5400806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/5400806/pexels-photo-5400806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Black & White</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/750225/pexels-photo-750225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/750225/pexels-photo-750225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Close up</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/952437/pexels-photo-952437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/952437/pexels-photo-952437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Events</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/5638701/pexels-photo-5638701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/5638701/pexels-photo-5638701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Family</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Fashion</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/7054779/pexels-photo-7054779.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/7054779/pexels-photo-7054779.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Fine Art</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Food</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Landscape</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/2832026/pexels-photo-2832026.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/2832026/pexels-photo-2832026.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Nature</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/713664/pexels-photo-713664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/713664/pexels-photo-713664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Night</div>        </div>
             
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/214576/pexels-photo-214576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/214576/pexels-photo-214576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">People</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Sports</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:50px;">
             <div class="centered">Travel</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snow" style="width:250px; border-radius:50px;">
             <div class="centered">Water</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/242124/pexels-photo-242124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/242124/pexels-photo-242124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Urban</div>        </div>
         </td>
         
         <td class="td">
           <div class="container">
-            <img src="https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:100px; border-radius:30px;">
+            <img src="https://images.pexels.com/photos/752842/pexels-photo-752842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Snow" style="width:250px; border-radius:90px;">
             <div class="centered">Wedding</div>        </div>
         </td>
       </table>
   </div>
   <div class="card_local">
    <div class="card">
-     <a href="https://drive.google.com/file/d/1Ry4NFoGycZOMfpVNaEjNEGTNFmrXI3eJ/view?usp=drivesdk">
+     <a href="">
      <img class="card_img" src="https://i.postimg.cc/qRX6gnwg/IMG-20231224-213049-720.jpg">
      </a>
      <h1 class="card_name">Cinematic Lightroom Preset</h1>
@@ -315,7 +302,7 @@
    </div>
    
    <div class="card">
-     <a href="https://drive.google.com/file/d/1Ry4NFoGycZOMfpVNaEjNEGTNFmrXI3eJ/view?usp=drivesdk">
+     <a href="">
      <img class="card_img" src="https://i.postimg.cc/265rFDGr/IMG-20231224-212319-733.jpg">
      </a>
      <h1 class="card_name">Coldest Lightroom Preset</h1>
@@ -348,18 +335,17 @@
    </div>
    <footer class="footer">
      <div class="footer_heading"><b>CaptureTone</b></div>
-     <div class="footer_text">Elevate your photos with our exquisite Lightroom presets collection. From vibrant landscapes to stunning portraits, effortlessly enhance your images with one-click adjustments for a professional and polished look.
-     </div>
+     <div class="footer_text">Elevate your photos with our exquisite Lightroom presets collection. From vibrant landscapes to stunning portraits, effortlessly enhance your images with one-click adjustments for a professional and polished look.</div>
      <div class="icon">
   <a href="https://www.facebook.com/debjyotipal.debjyotipal.9?mibextid=ZbWKwL"  class="fa fa-facebook"></a>
   
-  <a href="#" class="fa fa-twitter"></a>
+  <a href="#twitter" class="fa fa-twitter"></a>
   
   <a href="https://instagram.com/dylan_davis_4934" class="fa fa-instagram"></a>
   
-  <a href="#" class="fa fa-youtube"></a>
-<div class="under_footer"> <p> © all copyright recived by CaptureTone<!--28.12.2023--></p></div>
+  <a href="#youtube" class="fa fa-youtube"></a>
+<div class="under_footer"> <p> © all copyright recived by CaptureTone</p></div>
      </div>
    </footer>
   </body>
-</html>
+              </html>
