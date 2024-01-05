@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+  body{
+    background: #16171D;
+  }
+  .nav {
+        display: flex;
+        align-items: center;
+        background-color:#DC381F ;
+        padding: 50px 50px;
+        justify-content: space-between; 
+      }  
+    .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 60px;
+        color:white ;
+        font-family: 'Ubuntu', sans-serif;
+      } 
+      .logo_img{
+        width: 90px;
+        padding-right: 20px;
+      }
+    .audio {
+      border: 0px solid black;
+      padding: 100px 50px;
+      text-align: center;
+    }
+
+    .img {
+      width: 800px;
+      box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 10);
+      border:px solid white;
+      border-radius: 20px;
+      padding: 10px 10px;
+    }
+
+    .audio-element {
+      border: 0px solid black;
+      width: 700px;
+      
+      margin: 0px;
+    }
+
+    #controls button {
+      font-size: 40px;
+      font-family: 'Varela Round';
+      border-radius: 50px;
+      border: 0px;
+      color:white;
+      background: #DC381F;
+      margin: 30px;
+      padding: 40px 40px;
+      transition: transform .3s, background .4s;
+     transform: scale(var(--scale, 1)) translateZ(0);
+         &:active {
+        --scale: .95;
+   }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+      <div class="logo">
+        <img class="logo_img"src="https://i.postimg.cc/d1Rb1DK9/music-player.png" alt="Your Logo">
+       AnMusic
+      </div>
+     </div>
+    
+
+  <div class="audio">
+    <img src="https://c.saavncdn.com/397/Tu-hai-kahan-Hindi-2023-20231016122634-150x150.jpg" class="img">
+    <br>
+    <audio class="audio-element" id="audio1" controls  src="https://wapking.name/files/download/id/3254"></audio>
+
+    <div id="controls">
+
+      <button onclick="togglePlayPause(audioElements[0])"><b>Play / Pause Audio</b></button>
+
+    </div>
+  </div>
+
+  <div class="audio">
+    <img src="https://c.saavncdn.com/415/Satranga-From-ANIMAL-Hindi-2023-20231027131032-500x500.jpg" class="img">
+    <br>
+    <audio class="audio-element" id="audio2" src="https://dwn.pagolworld.in/siteuploads/files/sfd20/9607/Satranga(Mr-Jatt1.com).mp3" controls></audio>
+
+    <div id="controls">
+
+      <button onclick="togglePlayPause(audioElements[1])"><b>Play / Pause Audio</b></button>
+
+    </div>
+  </div>
+  
+    <div class="audio">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCFwYmZKhOX5S5xI35ySQnws7peKRxqTziuQ&usqp=CAU" class="img">
+    <br>
+    <audio class="audio-element" id="audio1" controls  src="https://wapking.name/files/download/id/2731"></audio>
+
+    <div id="controls">
+
+      <button onclick="togglePlayPause(audioElements[2])"><b>Play / Pause Audio</b></button>
+
+    </div>
+  </div>
+  
+  <div class="audio">
+    <img src="https://djpunjab.ink/siteuploads/thumb/sft3/1112_resize2x_175x200.webp" class="img">
+    <br>
+    <audio class="audio-element" id="audio2" src="https://pagalfree.com/musics/128-Zihaal e Miskin - Vishal Mishra 128 Kbps.mp3" controls></audio>
+
+    <div id="controls">
+
+      <button onclick="togglePlayPause(audioElements[3])"><b>Play / Pause Audio</b></button>
+
+    </div>
+  </div><!--simple song-->
+
+  <script>
+    var audioElements = document.querySelectorAll('.audio-element');
+
+    function togglePlayPause(audioElement) {
+      audioElements.forEach(function (element) {
+        if (element !== audioElement) {
+          element.pause();
+        }
+      });
+
+      if (audioElement.paused) {
+        audioElement.play();
+      } else {
+        audioElement.pause();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
