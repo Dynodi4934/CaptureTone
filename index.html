@@ -413,7 +413,7 @@
    
    
    <script>
-$(document).ready(function() {
+     $(document).ready(function() {
   var availableTags = [
     "Aesthetic Lightroom Preset",
     "Warm Moody Lightroom Preset",
@@ -427,6 +427,10 @@ $(document).ready(function() {
     select: function(event, ui) {
       var searchTerm = ui.item.value;
       performSearch(searchTerm);
+    },
+    messages: {
+      noResults: '',
+      results: function() {}
     }
   });
 
